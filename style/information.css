@@ -1,0 +1,27 @@
+.Educontainer{
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.content {
+    padding:60px 40px;
+    border-radius: 15px;
+    background-color:rgb(84, 84, 84,.2);
+    margin-bottom: 12px;
+}
+.aboutme-box p{
+    color:rgb(127, 127, 127);
+    margin-bottom: 27px;
+}
+@media (min-width:360px) {
+    .arrow::before{
+        content: "";
+        height: 0;
+        position:absolute;
+        transform: translate(-20px,25px);
+        width: 0;
+        z-index: 1;
+        border: medium solid white;
+        border-width: 20px 20px 20px 0;
+        border-color: transparent rgb(84, 84, 84,.2) transparent transparent;
+    }
+}

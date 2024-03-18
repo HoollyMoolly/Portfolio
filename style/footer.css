@@ -1,0 +1,50 @@
+footer{
+    background-color: #9B287B;
+    padding:40px;
+}
+.contact h3{
+    animation: blink 500ms alternate infinite;
+}
+@keyframes blink {
+    from{
+        color:#fff;
+    }
+    to{
+        color:#4c4c4c;
+    }
+}
+footer svg{
+    height:26px;
+    position: relative;
+    top:5px;
+}
+footer .contact svg{
+    cursor: pointer;
+    margin-right:2px ;
+    padding:9px;
+    width:26px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .2s;
+}
+footer .contact svg:hover{
+    scale: 1.1;
+    fill:#fff;
+    background-color: #4c4c4c;
+    border-radius: 50%;
+}
+.copyright{
+    margin-top:60px;
+    text-align: center;
+}
+.copyright svg{
+    animation: shake 1s ease-out alternate infinite;
+}
+@keyframes shake {
+    0%{
+        scale:1;
+    }
+    100%{
+        scale:1.6;
+    }
+}

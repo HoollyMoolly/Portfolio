@@ -1,0 +1,19 @@
+.material-symbols-outlined {
+    transition: 100ms;
+    font-size: 32px !important;
+    color:rgb(255, 247, 0);
+    margin:20px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' -50,
+    'opsz' 48
+}
+.logo-container:hover .material-symbols-outlined{
+    scale: 1.4;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' -50,
+    'opsz' 48
+}

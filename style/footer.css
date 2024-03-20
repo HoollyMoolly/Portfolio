@@ -22,7 +22,8 @@ footer .contact svg{
     cursor: pointer;
     margin-right:2px ;
     padding:9px;
-    width:26px;
+    height:40px;
+    width:40px;
     background-color: #fff;
     border-radius: 50%;
     transition: .2s;
@@ -46,5 +47,12 @@ footer .contact svg:hover{
     }
     100%{
         scale:1.6;
+    }
+}
+@media (min-width:1000px){
+    footer .contact svg{
+        height:60px;
+        width:60px;
+        padding:11px;
     }
 }

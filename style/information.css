@@ -1,14 +1,25 @@
+.information{
+    margin-top: 10rem;
+}
 .Educontainer{
     padding-left: 40px;
     padding-right: 20px;
 }
 .content {
+    text-align: center;
     padding:60px 40px;
     border-radius: 15px;
     background-color:rgb(84, 84, 84,.2);
     margin-bottom: 12px;
 }
-.aboutme-box p{
+.content img{
+    width:100px;
+    filter:drop-shadow(0 0 10px rgba(0,0,0,.5))
+}
+.ccw{ 
+    border-radius: 50%;
+}
+.aboutme p{
     color:rgb(127, 127, 127);
     margin-bottom: 27px;
 }
@@ -22,5 +33,41 @@
         border: medium solid white;
         border-width: 20px 20px 20px 0;
         border-color: transparent rgb(84, 84, 84,.2) transparent transparent;
+    }
+}
+@media (min-width:800px) {
+    .information{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content{
+        display: flex;
+    }
+    .content .logo{
+        margin-right:60px;
+    }
+    .content img{
+        width:200px;
+    }
+    .content .text{
+        text-align: start;
+    }
+}
+@media (min-width:1390px) {
+    .aboutme p{
+        width:500px;
+    }
+}
+/* max-width */
+@media (max-width:800px) {
+    .education{
+        margin-top:200px;
+    }
+}
+@media (max-width:600px) {
+    .education{
+        margin-top: 100px;
     }
 }

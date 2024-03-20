@@ -1,7 +1,3 @@
-*{
-    --menu-height:180px;
-    --nav-height:92px;
-}
 nav{
     position:fixed;
     flex-direction: column;
@@ -10,15 +6,8 @@ nav{
     top:0;
     background-color: #222;
     z-index: 1;
-    border:1px blue solid;
     height:fit-content;
     transition: .29s;
-}
-.nav--hidden{
-    transform: translateY(calc(-1 * var(--nav-height)));
-}
-.nav-menu--hidden{
-    transform: translateY(calc(-1 * (var(--nav-height)+var(--menu-height))));
 }
 .logo-menu{
     display: flex;
@@ -26,6 +15,7 @@ nav{
 }
 nav .logo-container{
     display: flex;
+    user-select: none;
     align-items: center;
     margin-left:20px;
     cursor: pointer;
@@ -68,7 +58,7 @@ nav .logo-container{
     transition: .2s;
 }
 .open{
-    height:var(--menu-height);
+    height:170px;
 }
 .topnav a{
     text-decoration: none;

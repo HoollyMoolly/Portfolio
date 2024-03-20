@@ -1,5 +1,55 @@
 .intro{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     margin: 150px 20px 10px 20px;
-    border:1px red solid;
     text-align: center;
+    animation: fade-in 1s;
+}
+.intro-img{
+    width:240px;
+    height:240px;
+    background-size: cover;
+    background-image: url(/media/E25E9444-rmbg.png);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+.flash{
+    background-color: #fff;
+    border:1px red solid;
+    height:240px;
+    mix-blend-mode: overlay;
+    opacity: 0;
+    animation:flash 100ms 2s;
+}
+@keyframes flash {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (min-width:725px) {
+    .intro{
+        flex-direction: row;
+    }
+    .intro-text{
+        text-align: start;
+        width:70%;
+        padding-left: 100px;
+    }
+    .intro-img{
+        width:400px;
+        height:400px;
+    }
 }

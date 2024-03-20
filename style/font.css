@@ -25,3 +25,8 @@ nav .logo{
         font-size: 22px;
     }
 }
+@media (min-width:1000px) {
+    body{
+        font-size: 30px;
+    }
+}

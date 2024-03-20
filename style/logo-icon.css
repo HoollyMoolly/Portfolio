@@ -17,3 +17,15 @@
     'GRAD' -50,
     'opsz' 48
 }
+.top{
+    display: none;
+    background-color: #2aa6ff;
+    border-radius: 50%;
+    padding:5px;
+    width:50px;
+    position: fixed;
+    cursor: pointer;
+    right:5%;
+    bottom:5%;
+    box-shadow: 0 0 5px 2px #2aa6ff;
+}

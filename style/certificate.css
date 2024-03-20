@@ -1,0 +1,23 @@
+.certificate{
+    margin:100px 0 100px 0;
+}
+.cer-scroll{
+    display: flex;
+    background-color: #134074;
+    padding:20px;
+    overflow-x: scroll;
+}
+.cer-card{
+    margin:10px;
+}
+.cer-card img, .cer-card{
+    width:200px;
+}
+.cer-card p{
+    text-align: center;
+}
+@media (min-width:800px) {
+    .cer-card img, .cer-card{
+        width:350px;
+    }
+}
